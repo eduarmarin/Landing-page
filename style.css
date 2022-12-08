@@ -28,9 +28,12 @@ body{
     padding-top: 24px;
     padding-bottom: 24px;
 }
+.box-presentation {
+    padding-bottom:7%;
+}
 .header{
     margin: 12px;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
 }
 .logo {
     width: 50%;
@@ -77,11 +80,11 @@ body{
     width: 5vw;
     /*height: 40px;*/
 }
-
+                  /* start second section, images */
 .images{
     text-align: center;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     gap: 120px;
 }
 .images-tittle {
@@ -100,9 +103,74 @@ body{
     width: 15%;
 }
 .images img{
-    border: 2px solid #3882f6;
+    border: 2px solid rgb(170, 168, 168);
     border-radius: 1%;
     object-fit: cover;
     width: 15vw;
     height: 100px;
+}
+                  /* start third section, inspiration */
+.inspiration {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quote{
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: -3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quote p{
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+}
+.sign{
+    width: 50%;
+    margin-top: -2%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.sign p{
+    font-weight: bolder;
+    font-size: 24px;
+}
+                  /* start fourth section, contact */
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blue-box {
+    width: 75%;
+    background-color: #3882f6;
+    border-radius: 7px;
+    color: white;
+    margin: 5%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.blue-box button{
+    width: 120px;
+    height: 42px;
+    background-color: #3882f6;
+    border-radius: 7px;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid pink;
+}
+.footer{
+    background-color: #1f2937;
+    text-align: center;
+    padding: 1%;
+    color: #e5e7eb;
 }
