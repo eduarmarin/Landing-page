@@ -17,31 +17,46 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+@media screen and (min-width: 880px){
+    .dropdown{
+        display:none;
+    }
+}
+@media screen and (max-width: 880px){
+    .logo{
+        display: none;
+    }
+    .links-intro{
+        display:none;
+    }
+}
 .header, .box-presentation{
-    width: 75%;
+    width: 80%;
     padding: 16px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 .box-presentation p{
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 24px;   
 }
 .box-presentation {
     padding-bottom:7%;
+    background-color: red;
 }
 .header{
     margin: 12px;
     margin-bottom: 40px;
 }
 .logo {
-    width: 50%;
+    width: 50px;
     font-size: 24px;
     color: #f9faf8;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; */
 }
 .links-intro ul {
     width: 100%;
@@ -53,7 +68,7 @@ body{
     list-style-type: none;
     margin: 0%;
     padding: 0%;
-    gap: 64px;
+    gap: 30px;
 }
 .presentation button{
     width: 120px;
