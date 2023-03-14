@@ -17,46 +17,9 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-@media screen and (min-width: 880px){
-    .dropdown{
-        display:none;
-    }
-}
-@media screen and (max-width: 880px){
-    .logo{
-        display: none;
-    }
-    .links-intro{
-        display:none;
-    }
-}
-.header, .box-presentation{
-    width: 80%;
-    padding: 16px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.box-presentation p{
-    padding-top: 24px;
-    padding-bottom: 24px;   
-}
-.box-presentation {
-    padding-bottom:7%;
-    background-color: red;
-}
-.header{
-    margin: 12px;
-    margin-bottom: 40px;
-}
-.logo {
-    width: 50px;
-    font-size: 24px;
-    color: #f9faf8;
-    /* display: flex;
-    align-items: center;
-    justify-content: flex-start; */
+.dropdown{
+    background-color: #1f2937;
+    color: #e5e7eb;
 }
 .links-intro ul {
     width: 100%;
@@ -70,9 +33,57 @@ body{
     padding: 0%;
     gap: 30px;
 }
+.header{
+    margin: 12px;
+    margin-bottom: 40px;
+}
+.logo {
+    width: 50px;
+    font-size: 24px;
+    color: #f9faf8;
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-start; */
+}
+@media screen and (min-width: 880px){
+    .dropdown{
+        display:none;
+    }
+}
+@media screen and (max-width: 880px){
+    .logo{
+        display: none;
+    }
+    .links-intro{
+        display:none;
+    }
+}
+.header, .box-presentation {
+    width: 80%;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.presentation{
+    max-width: 400px;
+}
+.presentation p{
+    padding-top: 24px;
+    padding-bottom: 24px;   
+}
+.box-presentation {
+    padding-bottom:7%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-around;
+    justify-content: space-around;
+}
 .presentation button{
     width: 120px;
     height: 42px;
+    margin-bottom: 20px;
     background-color: #3882f6;
     border-radius: 7px;
     color: white;
