@@ -173,12 +173,23 @@ body{
 .inspiration:hover{
     background-color: #8b423d;
     color: #f1f7d4;
-
 }
 .quote:hover p,
 .sign:hover p{
     color: #f1f7d4;
 }
+.crown:hover {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
                   /* start fourth section, contact */
 .contact {
     display: flex;
