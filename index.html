@@ -13,7 +13,7 @@
 
 	<body>
         <div class="content">
-            <div class="intro"> <!--start first section-->
+            <div id="intro" class="intro"> <!--start first section-->
                 <div class="header"> 
                     <div class="logo">
                         <img src="images/gearok.jpg" alt="gear">
@@ -23,18 +23,18 @@
                           MENU
                         </button>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">About it</a></li>
-                          <li><a class="dropdown-item" href="#">Queen</a></li>
-                          <li><a class="dropdown-item" href="#">Gallery</a></li>
-                          <li><a class="dropdown-item" href="#">Contact</a></li>
+                          <li><a class="dropdown-item" href="#intro">About it</a></li>
+                          <li><a class="dropdown-item" href="#routes">Routes</a></li>
+                          <li><a class="dropdown-item" href="#queen">Queen</a></li>
+                          <li><a class="dropdown-item" href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div class="links-intro">
                         <ul>
-                            <li><a class="dropdown-item" href="#">About it</a></li>
-                            <li><a class="dropdown-item" href="#">Queen</a></li>
-                            <li><a class="dropdown-item" href="#">Gallery</a></li>
-                            <li><a class="dropdown-item" href="#">Contact</a></li>  
+                            <li><a class="dropdown-item" href="#intro">About it</a></li>
+                            <li><a class="dropdown-item" href="#routes">Routes</a></li>
+                            <li><a class="dropdown-item" href="#queen">Queen</a></li>
+                            <li><a class="dropdown-item" href="#contact">Contact</a></li>  
                         </ul> 
                     </div>
                 </div>
@@ -50,32 +50,45 @@
                 </div> 
             </div> <!--end first section-->
 
-            <div class="images"> <!--start second section-->
+            <div id="routes" class="images"> <!--start second section-->
                 <div class="images-tittle"><p>Routes</p></div>
                 <div class="box-images">
-                    <div class="mtb"><img src="images/mtb1.jpg" alt="mtb1"><p>something nice about the pic 1 and its track</p></div>
-                    <div class="mtb"><img src="images/mtb2.jpg" alt="mtb2"><p>something nice about the pic 2 and its track</p></div>
-                    <div class="mtb"><img src="images/mtb3.jpg" alt="mtb3"><p>something nice about the pic 3 and its track</p></div>
-                    <div class="mtb"><img src="images/mtb4.jpg" alt="mtb4"><p>something nice about the pic 4 and its track</p></div>
+                    <div class="mtb"><img src="images/mtb1.jpg" alt="mtb1">
+                        <p>something nice about the pic 1 and its track</p>
+                    </div>
+                    <div class="mtb"><img src="images/mtb2.jpg" alt="mtb2">
+                        <div><p>something nice about the pic 2 and its track</p></div>
+                    </div>
+                    <div class="mtb"><img src="images/mtb3.jpg" alt="mtb3">
+                        <p>something nice about the pic 3 and its track</p>
+                    </div>
+                    <div class="mtb"><img src="images/mtb4.jpg" alt="mtb4">
+                        <p>something nice about the pic 4 and its track</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="inspiration">
+            <div id="queen" class="inspiration">
                 <div class="quote"><p>Bicycle, bicycle, bicycle<br> I want to ride my bicycle, bicycle, bicycle<br> I want to ride my bicycle<br> I want to ride my bike<br> I want to ride my bicycle<br> I want to ride it where I like</p></div>
-                <!--<p>Bicycle, bicycle, bicycle; I want to ride my bicycle, bicycle, bicycle; I want to ride my bicycle; I want to ride my bike; I want to ride my bicycle; I want to ride it where I like</p>-->
-                <div class="sign"><p>-Queen</p></div>
+                <div class="sign">
+                    <p>-Queen</p>
+                    <p class="crown-space">-</p>
+                    <i class   ="crown bi bi-pentagon-half"></i>
+                </div>
             </div>
-            <div class="contact">
+
+            <div id="contact" class="contact">
                 <div class="blue-box">
                     <div class="info-blue-box">
-                        <h1>Call to action! It's time</h1>
-                        <p>Sign up for enjoy our mtb comunity clicking that button right oveer there</p>
+                        <h1>It's time!</h1>
+                        <p>Sign up for enjoy our mtb comunity just clicking that button right over there!</p>
                     </div>
                     <button> Sign up</button>
                 </div>
             </div>
+
             <div class="footer">
-                <p>Copyright The Odin Project</p>
+                <p>&#169; 2023 Eduar Marin</p>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

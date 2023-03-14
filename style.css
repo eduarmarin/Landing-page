@@ -68,10 +68,12 @@ body{
 }
 .presentation{
     max-width: 400px;
+    text-align: center;
+    margin-bottom: 16px;
 }
 .presentation p{
-    padding-top: 24px;
-    padding-bottom: 24px;   
+    padding-top: 16px;
+    padding-bottom: 8px;   
 }
 .box-presentation {
     padding-bottom:7%;
@@ -79,17 +81,6 @@ body{
     flex-wrap: wrap;
     align-items: space-around;
     justify-content: space-around;
-}
-.presentation button{
-    width: 120px;
-    height: 42px;
-    margin-bottom: 20px;
-    background-color: #3882f6;
-    border-radius: 7px;
-    color: white;
-    font-size: large;
-    font-weight: bold;
-    border: 1px solid white;
 }
 .first-imag img {
     height: 360px;
@@ -109,9 +100,9 @@ body{
                   /* start second section, images */
 .images{
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    gap: 120px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    /* gap: 120px; */
 }
 .images-tittle {
     font-size: 36px;
@@ -124,6 +115,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .mtb {
     width: 15%;
@@ -141,62 +133,117 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 8px 0px 0px 0px;
+    padding-top: 8px;
+    padding-bottom: 30px;
+    transition: all 0.2s ease-in;
 }
 .quote{
-    width: 50%;
-    margin-top: 5%;
-    margin-bottom: -3%;
+    width: 80%;
+    margin-top: 5px;
+    margin-bottom: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.2s ease-in;
 }
-.quote p{
-    font-size: 36px;
+.quote p {
+    font-size: 24px;
     font-style: italic;
     color: #1f2937;
 }
 .sign{
-    width: 50%;
-    margin-top: -2%;
-    margin-bottom: 5%;
+    width: 80%;
+    margin: 2px 0 2px 0;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-end;
+}
+.crown-space{
+    color: white;   
+}
+.crown{
+    color: white;
+    font-size: 3rem;
 }
 .sign p{
     font-weight: bolder;
     font-size: 24px;
+}
+.inspiration:hover{
+    background-color: #8b423d;
+    color: #f1f7d4;
+
+}
+.quote:hover p,
+.sign:hover p{
+    color: #f1f7d4;
 }
                   /* start fourth section, contact */
 .contact {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -20px;
 }
 .blue-box {
-    width: 75%;
+    width: 70%;
     background-color: #3882f6;
     border-radius: 7px;
     color: white;
-    margin: 5%;
+    /* margin: 5%; */
     padding: 3%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.blue-box button{
-    width: 120px;
+button{
+    width: 110px;
     height: 42px;
+    margin-bottom: 20px;
     background-color: #3882f6;
-    border-radius: 7px;
     color: white;
     font-size: large;
     font-weight: bold;
-    border: 1px solid pink;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.2s ease-in;
 }
+button:hover,
+a:hover,
+img:hover {
+    scale: 1.05;
+}
+/* a:hover{
+    scale: 1.05;
+} */
 .footer{
     background-color: #1f2937;
     text-align: center;
     padding: 1%;
     color: #e5e7eb;
+}
+
+@media screen and (max-width: 500px){
+    .box-images{
+        flex-direction:column;
+    }
+    .mtb{
+        width: 50%;
+    }
+    .images img{
+        width: 80%;
+    }
+    .quote p{
+        font-size: 16px;
+    }
+    .sign p{
+        font-size: 16px;
+    }
+    .blue-box{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
 }
